@@ -15,7 +15,7 @@
 
 function onScanSuccess(decodedText, decodedResult) {
      console.log(`Code scanned = ${decodedText}`, decodedResult);
-     alert(`Code scanned = ${decodedText}`, decodedResult);
+     window.open(decodedText,"_blank");
 }
 var html5QrcodeScanner = new Html5QrcodeScanner(
   "qr-reader", { fps: 10, qrbox: 250 });
